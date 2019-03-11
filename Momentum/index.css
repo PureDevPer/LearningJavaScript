@@ -1,13 +1,15 @@
 body {
     background-color: #ecf0f1;
+    color: #ecf0f1;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+    top: 50%;
   }
 
   .btn{
       cursor: pointer;
-  }
-  
-  body {
-      color: #34495e;
   }
 
   .clicked {
@@ -21,6 +23,10 @@ body {
 
   .showing{
       display: block;
+  }
+
+  .js-toDoList{
+      list-style-type: none;
   }
 
 

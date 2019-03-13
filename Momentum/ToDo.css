@@ -1,0 +1,9 @@
+.js-toDoList{
+    list-style-type: none;
+    font-size: 15px;
+    text-align: center;
+}
+
+.ulList{
+    margin-bottom: 15px;
+}

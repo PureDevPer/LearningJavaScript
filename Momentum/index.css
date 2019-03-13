@@ -1,11 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import "center.css";
+@import "weather.css";
+@import "ToDo.css";
 body {
-    background-color: #ecf0f1;
     color: #ecf0f1;
     font-size: 40px;
     font-weight: bold;
-    text-align: center;
     margin-top: 100px;
     top: 50%;
+    font-family: "Open Sans", sans-serif;
+  }
+
+ 
+
+  .h1Text{
+      font-size: 100px;
   }
 
   .btn{
@@ -25,9 +34,7 @@ body {
       display: block;
   }
 
-  .js-toDoList{
-      list-style-type: none;
-  }
+
 
 
   @keyframes fadeIn{

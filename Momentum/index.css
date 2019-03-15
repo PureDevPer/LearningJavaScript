@@ -2,6 +2,8 @@
 @import "center.css";
 @import "weather.css";
 @import "ToDo.css";
+@import "greeting.css";
+
 body {
     color: #ecf0f1;
     font-size: 40px;
@@ -11,41 +13,66 @@ body {
     font-family: "Open Sans", sans-serif;
   }
 
- 
+h1,
+h4 {
+    margin: 0;
+}
 
-  .h1Text{
+input{
+    color: #ecf0f1;
+    font-weight: bold;
+}
+
+input::placeholder {
+    color: #ecf0f1;
+    font-weight: bold;
+    text-align: center;
+}
+
+input:focus,
+input:active {
+  outline: none;
+}
+
+.h1Clock{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+
+.h1Text{
       font-size: 100px;
-  }
+}
 
-  .btn{
-      cursor: pointer;
-  }
 
-  .clicked {
+
+.clicked {
       color: #7f8c8d;
-  }
+}
 
-  .form,
-  .greetings{
+.form,
+.greetings{
       display: none;
-  }
+}
 
-  .showing{
+.showing{
       display: block;
-  }
+      font-size: 40px;
+      margin-top: 0%;
+}
 
 
 
 
-  @keyframes fadeIn{
-      from{
+@keyframes fadeIn{
+    from{
           opacity: 0
-      } to {
+    } to {
           opacity: 1;
-      }
-  }
+    }
+}
 
-  .bgImage{
+.bgImage{
     position: absolute;
     top: 0;
     left: 0;

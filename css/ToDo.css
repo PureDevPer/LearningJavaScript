@@ -1,0 +1,30 @@
+.js-toDoList{
+    list-style-type: none;
+    font-size: 30px;
+    text-align: center;
+    color: #ecf0f1;
+}
+
+.ulList{
+    margin-bottom: 15px;
+}
+
+.toDoInput{
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    border-bottom: 3px solid white;
+}
+
+
+.delBtn{
+    margin-left: 5px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.js-toDoForm{
+    margin-top: 30px;
+}

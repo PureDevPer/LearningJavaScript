@@ -3,17 +3,25 @@ const weahter = document.querySelector(".js-weather");
 const API_KEY = "85616b14bfc84b9641e418e55ab915b3";
 const COORDS = 'coords';
 
+let fahrenheit,
+    isFahrenheit, 
+    celsius,
+    place;
+
 // @argParam
 // lat: latitude, lon: longitude
 function getWeather(lat, lon){
-    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=imperial`).then(function(response){
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=imperial`)
+    .then(function(response){
         //console.log(response.json());
         return response.json()
     }).then(function(json){
         //console.log(json);
-        const temperature = Math.round(json.main.temp);
-        const place = json.name;
-        weahter.innerText = `${temperature} F / ${place}`
+        fahrenheit = json.main.temp;
+        isFahrenheit = true;
+        const temperature = Math.round(fahrenheit);
+        place = json.name;
+        weahter.innerText = `${temperature} F / ${place}`;
     })
 }
 
@@ -57,8 +65,23 @@ function loadCoords(){
     }
 }
 
+function changeUnit(){
+    if(!isFahrenheit){
+        isFahrenheit = true;
+        weahter.innerText = `${Math.round(fahrenheit)} F / ${place}`;
+        //console.log(fahrenheit, isFahrenheit);
+    } else {
+        celsius = (fahrenheit-32) * (5/9);
+        isFahrenheit = false;
+        weahter.innerText = `${Math.round(celsius)} C / ${place}`;
+        //console.log(celsius, isFahrenheit);
+    }
+
+}
+
 function init(){
     loadCoords();
+    weahter.addEventListener("click", changeUnit);
 }
 
 init();

@@ -13,4 +13,6 @@ Cloning Momentum application
 - To-Do List
 - Greeting
 - Local Storage
-- Geolocation - Weather (Temperature and Your Location) - change from fahrenheit to celsius or vice versa
+- Geolocation 
+    - Loading Weather Information (Temperature and Your Location)
+- Change from fahrenheit to celsius or vice versa

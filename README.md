@@ -6,7 +6,7 @@ Cloning Momentum application
 
 - [x] HTML5
 - [x] CSS3
-- [x] Javascript (ES6)
+- [x] Javascript
 
 ## Features
 
